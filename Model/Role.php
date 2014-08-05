@@ -42,7 +42,7 @@ class Role extends FlexAuthAppModel {
             );
             
     
-    public function afterSave($created) {
+    public function afterSave($created, $options = array()) {
         
         $id=$this->id;
         

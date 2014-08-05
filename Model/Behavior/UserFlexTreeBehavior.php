@@ -47,7 +47,7 @@ class UserFlexTreeBehavior extends ModelBehavior {
     
     
     
-    public function beforeSave(Model $model) {
+    public function beforeSave(Model $model, $options = array()) {
         
         return true;
     }
@@ -70,7 +70,7 @@ class UserFlexTreeBehavior extends ModelBehavior {
         return $node;
     }
     
-    public function afterSave(Model $model,$created=true) {
+    public function afterSave(Model $model, $created=true, $options = array()) {
         $groupClass = $this->settings['groupClass'];
         
            
